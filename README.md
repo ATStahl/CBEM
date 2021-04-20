@@ -26,7 +26,7 @@ In Earth Engine, "Assets" provide a way of importing GIS files that were created
 If you wish to analyze a different area, you have three options. 
 (1)	Enter bounding coordinates (longitude, latitude in decimal degrees) to outline a study area anywhere on the globe. 
 (2)	Draw a polygon or rectangle on the map. Exit drawing, then hover over the geometry layer to open the geometry settings, rename it “ROI” and choose to import it as a FeatureCollection. 
-(3)	If you have a shapefile for your study area, you can import it as an Asset (upload the 6 files that comprise the shapefile, leaving out the “.sbx” if there is one). After it has been ingested (check Task pane for progress), import the Asset into this script, and then assign it to a variable by clicking “table” and replacing it with “ROI” – those steps will change the study area in this script.
+(3)	If you have a shapefile for your study area, you can import it as an Asset (upload the 6 files that comprise the shapefile, leaving out the “.sbx” if there is one. Alternatively, you can upload a single zip file containing the 6 files in the shapefile). After it has been ingested (check Task pane for progress), import the Asset into this script, and then assign it to a variable by clicking “table” and replacing it with “ROI” – those steps will change the study area in this script.
 
 Note that a larger study area may take longer to process requests. 
 
