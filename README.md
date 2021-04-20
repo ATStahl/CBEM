@@ -1,7 +1,7 @@
 # CBEM
 This repository contains scripts and documentation to accompany manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
 
-Script 1: Inspect imagery, classify cover, and evaluate accuracy
+Script 1.0: Inspect imagery, classify cover, and evaluate accuracy
 
 This script was coded in JavaScript in the Google Earth Engine (GEE) code editor. It executes the following tasks as implemented in the study area, eastern Washington State, USA. 
 
@@ -30,12 +30,13 @@ If you wish to analyze a different area, you have three options.
 Note that a larger study area may take longer to process requests. 
 
 Regarding portions of images obscured by clouds:
-In script 1, we will apply a function to mask clouds each time we create a composite image. The cloud mask function in the lines below is written near the top of the script so that it will be available when called later on. Sentinel imagery has a band labeled ‘QA’ that indicates cloud cover; that is what is used here. Other image sources such as Landsat imagery have searchable code snippets to deal with clouds.
+In script 1.0, we will apply a function to mask clouds each time we create a composite image. The cloud mask function in the lines below is written near the top of the script so that it will be available when called later on. Sentinel imagery has a band labeled ‘QA’ that indicates cloud cover; that is what is used here. Other image sources such as Landsat imagery have searchable code snippets to deal with clouds.
 
 Regarding Sentinel-2 products:
 Because the study area is semi-arid and the time interval was during the dry season, we were able to reliably use the top of atmosphere (Level 1C) product. Sentinel-2 imagery pre-processed for surface reflectance (Level-2A) is becoming available on GEE and may be more appropriate to use in some settings. First, we well query and create composite image to train the classifier. Then we will repeat the same process to query and composite an image to classify.
 
-Regarding land cover classification in Script 1
+Regarding land cover classification in Script 1.0:
 The script executes the land cover classification in the accompanying article (Stahl et al. 2021). Before these code lines can be used, one or more datasets is needed for model training and validation. These input data can be generated from existing field data or spatial datasets related to land cover that are available for the area to be used for model training. In this case, we used visual inspection and local knowledge of the study area to hand-draw polygons representing each cover class. To do this, we referred to Google Earth imagery, NAIP (National Agricultural Imagery Program, US Department of Agriculture) aerial imagery, and Sentinel-2 satellite imagery. Through visual interpretation, we identified areas as open water, impervious surfaces, green vegetation, or brown vegetation (including bare soil). The training polygons from this study are include as a zipped shapefile: training_SHP.zip. 
 
-
+Regarding the use of Earth Engine Assets in Script 1.0:
+To minimize processing time and to avoid going over memory limits per script run, we recommend iterating through classifications and exporting each classified image to Assets. The lines below can be used to export the image that was classified in the current script run. The Tasks pane will show the ‘description’ indicated in the Export function. Click RUN and a dialog box will open. There you can specify where you wish to send the exported image--to your Earth Engine Assets for use in the Code Editor, or to your Google Drive as a TIFF for download.  
