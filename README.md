@@ -1,6 +1,5 @@
 # CBEM
-Scripts and documentation to accompany manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area.
-These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
+This repository contains scripts and documentation to accompany manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
 
 Script 1: Inspect imagery, classify cover, and evaluate accuracy
 
@@ -37,6 +36,6 @@ Regarding Sentinel-2 products:
 Because the study area is semi-arid and the time interval was during the dry season, we were able to reliably use the top of atmosphere (Level 1C) product. Sentinel-2 imagery pre-processed for surface reflectance (Level-2A) is becoming available on GEE and may be more appropriate to use in some settings. First, we well query and create composite image to train the classifier. Then we will repeat the same process to query and composite an image to classify.
 
 Regarding land cover classification in Script 1
-The script executes the land cover classification in the accompanying article (Stahl et al. 2021). Before these code lines can be used, one or more datasets is needed for model training and validation. These input data can be generated from existing field data or spatial datasets related to land cover that are available for the area to be used for model training. In this case, we used visual inspection and local knowledge of the study area to hand-draw polygons representing each cover class. To do this, we referred to Google Earth imagery, NAIP (National Agricultural Imagery Program, US Department of Agriculture) aerial imagery, and Sentinel-2 satellite imagery. Through visual interpretation, we identified areas as open water, impervious surfaces, green vegetation, or brown vegetation (including bare soil).
+The script executes the land cover classification in the accompanying article (Stahl et al. 2021). Before these code lines can be used, one or more datasets is needed for model training and validation. These input data can be generated from existing field data or spatial datasets related to land cover that are available for the area to be used for model training. In this case, we used visual inspection and local knowledge of the study area to hand-draw polygons representing each cover class. To do this, we referred to Google Earth imagery, NAIP (National Agricultural Imagery Program, US Department of Agriculture) aerial imagery, and Sentinel-2 satellite imagery. Through visual interpretation, we identified areas as open water, impervious surfaces, green vegetation, or brown vegetation (including bare soil). The training polygons from this study are include as a zipped shapefile: training_SHP.zip. 
 
 
