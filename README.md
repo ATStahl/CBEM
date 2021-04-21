@@ -1,7 +1,17 @@
 # CBEM
 This repository contains scripts and documentation to accompany manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
 
-Script 1.0: Inspect imagery, classify cover, and evaluate accuracy
+In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. There are also three zipped shapefiles that can be imported as Assets into your Earth Engine storage:
+
+HUC8_outline_SHP.zip: outline of the study area used by Stahl et al. (2021)
+
+training_SHP.zip: polygons used by Stahl et al. (2021) to train the classifier with Sentinel-2 images (collected in 2018).
+
+validation_SHP.zip: polygons used by Stahl et al. (2021) to validate the classification of another set of Sentinel-2 images (collected in 2019).
+
+
+
+# Script 1.0: Inspect imagery, classify cover, and evaluate accuracy
 
 This script was coded in JavaScript in the Google Earth Engine (GEE) code editor. It executes the following tasks as implemented in the study area, eastern Washington State, USA. 
 
