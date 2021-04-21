@@ -11,7 +11,7 @@ validation_SHP.zip: polygons used by Stahl et al. (2021) to validate the classif
 
 
 
-# Script 1.0: Inspect imagery, classify cover, and evaluate accuracy
+## Script 1.0: Inspect imagery, classify cover, and evaluate accuracy
 
 This script was coded in JavaScript in the Google Earth Engine (GEE) code editor. It executes the following tasks as implemented in the study area, eastern Washington State, USA. 
 
