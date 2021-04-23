@@ -1,4 +1,4 @@
-# CBEM
+# Cloud-based Environmental Monitoring (CBEM)
 This repository contains scripts and documentation to accompany a manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
 
 In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. There are also three zipped shapefiles and a TIFF that can be imported as Assets into your Earth Engine storage:
