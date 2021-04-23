@@ -3,11 +3,13 @@ This repository contains scripts and documentation to accompany manuscript under
 
 In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. There are also three zipped shapefiles that can be imported as Assets into your Earth Engine storage:
 
-HUC8_outline_SHP.zip: outline of the study area used by Stahl et al. (2021)
+HUC8_outline_SHP.zip: outline of the study area used by Stahl et al. (in review)
 
-training_SHP.zip: polygons used by Stahl et al. (2021) to train the classifier with Sentinel-2 images (collected in 2018).
+______: outline of potential riparian areas in the study area used by Stahl et al. (in review)
 
-validation_SHP.zip: polygons used by Stahl et al. (2021) to validate the classification of another set of Sentinel-2 images (collected in 2019).
+training_SHP.zip: polygons used by Stahl et al. (in review) to train the classifier with Sentinel-2 images (collected in 2018).
+
+validation_SHP.zip: polygons used by Stahl et al. (in review) to validate the classification of another set of Sentinel-2 images (collected in 2019).
 
 
 
@@ -58,7 +60,7 @@ Note: This script will not work unless there are already classified images to im
 This is the Classification/Uncertainty script that was used to create Figure 3e,f in Stahl et al. (2021).
 The purpose of this script is to generate uncertainty classes by querying 2016-2019 composite images classified by a classifier trained on a 2018 image composite.It then computes area-based statistics for the uncertainty classes.
 
-## Data Sources used to generate shapefiles
+## Data Sources used in the generatation of attached GIS layers
 Theobald DM, Mueller D, Norman J. 2013. Detailed datasets on riparian and valley-bottom attributes and condition for the Great Northern and Northern Pacific. Available from https://databasin.org/galleries/58411c761def4a54a477bebc48a57db1 (accessed May 19, 2015)
 United States Geological Survey (USGS). 2013. National Hydrography Geodatabase. Available from https://ecology.wa.gov/ (accessed June 16, 2017).
 Whitman County 2017. Whitman County Voluntary Stewardship Program Work Plan. Available from https://scc.wa.gov/vsp/ (accessed March 13, 2020).
