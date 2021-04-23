@@ -1,11 +1,11 @@
 # CBEM
-This repository contains scripts and documentation to accompany manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
+This repository contains scripts and documentation to accompany a manuscript under review at BioScience (Stahl et al., in review). Please refer to the manuscript for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request. 
 
-In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. There are also three zipped shapefiles that can be imported as Assets into your Earth Engine storage:
+In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. There are also three zipped shapefiles and a TIFF that can be imported as Assets into your Earth Engine storage:
 
 HUC8_outline_SHP.zip: outline of the study area used by Stahl et al. (in review)
 
-______: outline of potential riparian areas in the study area used by Stahl et al. (in review)
+FP1_Rip_FFA1_Mask1.tif: outline of potential riparian areas in the study area used by Stahl et al. (in review)
 
 training_SHP.zip: polygons used by Stahl et al. (in review) to train the classifier with Sentinel-2 images (collected in 2018).
 
@@ -32,7 +32,7 @@ VI.	Evaluate the accuracy of the model with an independent set of validation pol
 All lines of code provided in the scripts in this repository can be copied and pasted directly into the Earth Engine Code Editor (https://code.earthengine.google.com/) once a user account has been created. Comments above each block of code indicate what those lines accomplish and how they can be adapted to different study areas or timeframes. Note that “//” marks text that will be disregarded by GEE, so such lines can be copied directly into the Code Editor for quick reference. In some instances, “//” are used to prevent lines of code from being executed during a given model run. This helps to manage performance and keep each run of the script within the memory limitations of GEE.  
 
 Additional Notes:
-In Earth Engine, "Assets" provide a way of importing GIS files that were created outside of GEE. They also enable the user to save outputs from a previous run of the script so that they can be imported back into the script for quick analysis with minimal memory usage. The comment lines below are simply a note to indicate that some of the objects used in this script are stored as Assets, either before any lines are executed (e.g., the study area outline) or during the execution of the script (e.g., hand-drawn polygons and classified image composites). Below we have added two lines of code to create a simple rectangular polygon outlining the study are for this script. It covers the area analyzed by Stahl et al. 2021 (available in this repository as a zipped shapefile: HUC8_outline_SHP.zip. 
+In Earth Engine, "Assets" provide a way of importing GIS files that were created outside of GEE. They also enable the user to save outputs from a previous run of the script so that they can be imported back into the script for quick analysis with minimal memory usage. The comment lines below are simply a note to indicate that some of the objects used in this script are stored as Assets, either before any lines are executed (e.g., the study area outline) or during the execution of the script (e.g., hand-drawn polygons and classified image composites). Below we have added two lines of code to create a simple rectangular polygon outlining the study are for this script. It covers the area analyzed by Stahl et al.(in review), available in this repository as a zipped shapefile: HUC8_outline_SHP.zip. 
 
 If you wish to analyze a different area, you have three options. 
 (1)	Enter bounding coordinates (longitude, latitude in decimal degrees) to outline a study area anywhere on the globe. 
@@ -57,8 +57,8 @@ To minimize processing time and to avoid going over memory limits per script run
 
 Note: This script will not work unless there are already classified images to import (see Script 1 or import classified images from another source).
 
-This is the Classification/Uncertainty script that was used to create Figure 3e,f in Stahl et al. (2021).
-The purpose of this script is to generate uncertainty classes by querying 2016-2019 composite images classified by a classifier trained on a 2018 image composite.It then computes area-based statistics for the uncertainty classes.
+This is the source script that was used to create Figure 3e,f in Stahl et al. (in review).
+The purpose of this script is to generate land cover change classes by querying 2016-2019 composite images classified by a classifier trained on a 2018 image composite.It then computes area-based statistics for the uncertainty classes.
 
 ## Data Sources used in the generatation of attached GIS layers
 Theobald DM, Mueller D, Norman J. 2013. Detailed datasets on riparian and valley-bottom attributes and condition for the Great Northern and Northern Pacific. Available from https://databasin.org/galleries/58411c761def4a54a477bebc48a57db1 (accessed May 19, 2015)
