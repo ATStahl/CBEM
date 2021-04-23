@@ -50,3 +50,10 @@ The script executes the land cover classification in the accompanying article (S
 
 Regarding the use of Earth Engine Assets in Script 1.0:
 To minimize processing time and to avoid going over memory limits per script run, we recommend iterating through classifications and exporting each classified image to Assets. The lines below can be used to export the image that was classified in the current script run. The Tasks pane will show the ‘description’ indicated in the Export function. Click RUN and a dialog box will open. There you can specify where you wish to send the exported image--to your Earth Engine Assets for use in the Code Editor, or to your Google Drive as a TIFF for download.  
+
+##Script 2: Create change classes from images that were classified in Script 1
+
+Note: This script will not work unless there are already classified images to import (see Script 1 or import classified images from another source).
+
+This is the Classification/Uncertainty script that was used to create Figure 3e,f in Stahl et al. (2021).
+The purpose of this script is to generate uncertainty classes by querying 2016-2019 composite images classified by a classifier trained on a 2018 image composite.It then computes area-based statistics for the uncertainty classes.
