@@ -1,5 +1,5 @@
 # Cloud-based Environmental Monitoring (CBEM)
-This repository contains scripts and documentation to accompany an article in BioScience entitled "Cloud-Based Environmental Monitoring to Streamline Remote Sensing Analysis for Biologists” (Stahl et al., 2021). Please refer to the published article for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request.
+This repository contains scripts and documentation to accompany an article in BioScience entitled "Cloud-Based Environmental Monitoring to Streamline Remote Sensing Analysis for Biologists” (Stahl et al., 2021), available at https://academic.oup.com/bioscience/advance-article/doi/10.1093/biosci/biab100/6373638?guestAccessKey=48cef617-06c0-49d0-8702-ba1b27675e7f. Please refer to the published article for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request.
 
 To view the products of the published version of this analysis and subsequent updates in a publicly available Earth Engine App, visit https://atstahl.users.earthengine.app/.
 
