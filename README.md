@@ -1,6 +1,8 @@
 # Cloud-based Environmental Monitoring (CBEM)
 This repository contains scripts and documentation to accompany an article in BioScience entitled <a href="https://doi.org/10.1093/biosci/biab100">"Cloud-Based Environmental Monitoring to Streamline Remote Sensing Analysis for Biologists”</a> (Stahl et al., 2021), full text available on ResearchGate https://tinyurl.com/StahlCBEM2021. Please refer to the published article for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request.
 
+The full tutorial (PDF) accompanying the published article, which goes through the study analysis step by step, is included in this repository: See CBEM_GEE_scripts_CoverClassChange_SubmittedVersion.pdf.
+
 To view the products of the published version of this analysis and subsequent updates in a publicly available Earth Engine App, visit https://atstahl.users.earthengine.app/.
 
 In this repository there are two scripts for use in the Google Earth Engine Code Editor (https://code.earthengine.google.com/), once access is granted to your Google account. Each script is available in either .js or .txt format. (Note: in a text editor such as Atom you can install a JavaScript package that will color code functions, variables, etc. when you use the .js versions.)
