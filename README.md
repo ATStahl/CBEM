@@ -1,5 +1,5 @@
 # Cloud-based Environmental Monitoring (CBEM)
-This repository contains scripts and documentation to accompany an article in BioScience entitled <a href="https://doi.org/10.1093/biosci/biab100">"Cloud-Based Environmental Monitoring to Streamline Remote Sensing Analysis for Biologists”</a> (Stahl et al., 2021), full text available on ResearchGate https://tinyurl.com/StahlCBEM2021. Please refer to the published article for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request.
+This repository contains scripts and documentation to accompany an article in BioScience entitled <a href="https://doi.org/10.1093/biosci/biab100">"Cloud-Based Environmental Monitoring to Streamline Remote Sensing Analysis for Biologists”</a> (Stahl et al., 2021), full text available from the User Library at https://labs.wsu.edu/ecology/research-projects/cbem-user-library/. Please refer to the published article for background information about the study area. These scripts will be updated to reflect changes to the Earth Engine library of functions or upon request.
 
 The **full tutorial** (PDF) accompanying the published article, which goes through the study analysis step by step, is included in this repository: See CBEM_GEE_scripts_CoverClassChange_SubmittedVersion.pdf.
 
